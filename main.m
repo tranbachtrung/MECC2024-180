@@ -1,5 +1,6 @@
 clc; clear all; close all; format compact;
 casadi_path = 'casadi-3.6.5-windows64-matlab2018b';
+%casadi_path = 'casadi-3.6.5-linux64-matlab2018b';
 addpath(casadi_path)
 import casadi.*
 which('casadiMEX')
