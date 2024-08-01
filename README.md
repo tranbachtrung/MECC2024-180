@@ -5,4 +5,5 @@ The code requires using Casadi 3.6.5 in MATLAB, which can be freely obtained fro
 
 Please read the 'main.m' file to get started with the computational example. To quickly run the code (bypassing the model compilation of Section 1, 2, 4, and 5), run 'main_quick_run.m'. 
 
-The results of the computational example is saved in the folder ./paper_results for ease of reference. Running this code online will save the results to ./results. Note that if the model (Section 1, 2, 4, and 5) and the run settings (Secion 6) do not change, the figures in ./paper_results and ./results would be identical.
+The results of the computational example is saved in the folder 'paper_results' for ease of reference. Running this code online will save the results to 'results'. Note that if the model (Section 1, 2, 4, and 5) and the run settings (Secion 6) do not change, the figures in 'paper_results' and 'results' would be identical.
+

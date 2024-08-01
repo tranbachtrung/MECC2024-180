@@ -1,5 +1,6 @@
 clc; clear all; close all; format compact;
-addpath('casadi-3.6.5-windows64-matlab2018b')
+casadi_path = 'casadi-3.6.5-windows64-matlab2018b';
+addpath(casadi_path)
 import casadi.*
 which('casadiMEX')
 
@@ -700,7 +701,7 @@ legend('battery level', 'product level','','','')
 saveas(gcf,'results/level.jpg')
 saveas(gcf,'results/level.fig')
 
-rmpath('casadi-3.6.5-windows64-matlab2018b')
+rmpath(casadi_path)
 
 %% Support functions
 %%-------------------------------------------------------------------------
