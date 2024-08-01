@@ -1,4 +1,8 @@
 clc; clear all; close all; format compact;
+addpath('casadi-3.6.5-windows64-matlab2018b')
+import casadi.*
+which('casadiMEX')
+
 rng('default');
 
 % Filename: main.m
@@ -217,6 +221,9 @@ for i = 1:length(data_lat)
     text(data_lat(i)-0.025, data_long(i)-0.025, num2str(i),...
         'FontSize', 10, 'FontWeight', 'bold', 'color', temp_color)
 end
+
+saveas(gcf,'results/map.jpg')
+saveas(gcf,'results/map.fig')
 
 %% Section 4 - Defining states, actions, transitions, costs, and constraints
 LN = 1000; % large number for penalty
@@ -650,6 +657,8 @@ ylim([0-0.05, 1+0.05])
 xlabel('time step')
 ylabel('probability')
 
+saveas(gcf,'results/vertex.jpg')
+saveas(gcf,'results/vertex.fig')
 
 % Figure 2.1
 figure
@@ -688,6 +697,10 @@ xlim([0, length(time)-1])
 xlabel('time step')
 legend('battery level', 'product level','','','')
 
+saveas(gcf,'results/level.jpg')
+saveas(gcf,'results/level.fig')
+
+rmpath('casadi-3.6.5-windows64-matlab2018b')
 
 %% Support functions
 %%-------------------------------------------------------------------------
