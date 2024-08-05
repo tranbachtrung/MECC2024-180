@@ -8,3 +8,4 @@ If you use linux, please change the 'casadi_path' variable in 'main.m' and 'main
 
 The results of the computational example is saved in the folder 'paper_results' for ease of reference. Running this code online will save the results to 'results'. Note that if the model (Section 1, 2, 4, and 5) and the run settings (Secion 6) do not change, the figures in 'paper_results' and 'results' would be identical.
 
+The code is available to run through Code Ocean: https://codeocean.com/capsule/1781107/tree/v1. 
